@@ -1,0 +1,52 @@
+<mat-nav-list>
+  <div class="logo py-4">
+    <!-- <img src="./assets/logo.svg" alt="Company Logo" /> -->
+  </div>
+  <mat-divider></mat-divider>
+  <div class="links">
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/home">
+      <mat-icon class="material-icons-outlined">home</mat-icon>
+      <p>Acceuil</p>
+    </a>
+    <a
+      mat-list-item
+      routerLinkActive="list-item-active"
+      routerLink="/dashboard"
+    >
+      <mat-icon>person</mat-icon>
+      <p>Mesélèves</p>
+    </a>
+    <a mat-list-item routerLink="/notifications">
+      <mat-icon>notifications </mat-icon>
+      <p>Notifications</p></a
+    >
+    <a mat-list-item routerLink="/planning">
+      <mat-icon>calendar_today</mat-icon>
+      <p>Planning</p>
+    </a>
+
+    <a mat-list-item>
+      <mat-icon>attach_money </mat-icon>
+      <p>Paiements</p></a
+    >
+
+    <a mat-list-item>
+      <mat-icon>chat_bubble</mat-icon>
+      <p>Messagerie</p></a
+    >
+    <a mat-list-item>
+      <mat-icon>link</mat-icon>
+      <p>Liens utiles</p>
+    </a>
+    <a mat-list-item>
+      <mat-icon>settings</mat-icon>
+      <p>Paramètres</p>
+    </a>
+    <br />
+    <!-- <p style="margin-bottom: 100px"></p> -->
+    <a mat-list-item>
+      <mat-icon style="color: red">logout</mat-icon>
+      <p>Déconnexion</p></a
+    >
+  </div>
+</mat-nav-list>

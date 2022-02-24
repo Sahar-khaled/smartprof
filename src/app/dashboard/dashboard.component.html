@@ -1,0 +1,53 @@
+<!-- <div class="container-fluid page">
+  <div class="d-flex page__box "></div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="page__content-data position-absolute text-center">
+      Dashboard Content Goes Here
+    </div>
+  </div>
+</div> -->
+<div class="container content">
+  <mat-tab-group class="" animationDuration="200ms">
+    <mat-tab class="label" label="Mes élèves  ">
+      <div
+        id="tab-students"
+        class="page-content tab tab-active "
+
+      >
+        <strong style="font-size: 20px">Mes élèves</strong>
+        <hr style="width: 200px; opacity: 0.6; margin-left: 0px" />
+        <div class="row studentsBoxesHolder">
+          <div class="col studentBox">
+            <div class="studentBoxHolder">
+              <div class="studentBoxName">eleve test</div>
+              <div
+                class="chip color-orange"
+              >
+                <div class="chip-label">Comptabilité</div>
+              </div>
+            </div>
+            <button
+              class="button button-outline color-gray studentBoxAddBtn"
+              data-type="one"
+              data-name="eleve test"
+            >
+              planifier une séance
+            </button>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Mes groupes">
+      <div class="sectionInner ">
+        <div class="tabs" >
+          <div id="tab-groups" class="page-content tab " style="font-size: 20px">
+            <strong  class="">Mes groupes</strong>
+            <hr style="width: 200px; opacity: 0.6; margin-left: 0px" />
+            <br />
+            <div class="row studentsBoxesHolder"></div>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

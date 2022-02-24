@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.py-4 ,.mat-list-base  {
+  padding: 0 !important;
+}
+::ng-deep .menu-without-scroll {
+  overflow: hidden !important;
+}
+
+.mat-tab-labels {
+  justify-content: space-around !important;
+  margin-left: 16px;
+  border-radius: 50px;
+  background: #ffc063;
+  color: white;
+  border: none;
+  box-shadow: 5px 0px 20px -10px #d7ccc8;
+ margin-top: 1rem ;
+  border-bottom: 1px solid #eceff1;
+  padding: 10px;
+    font-size: 14px !important;
+
+
+}
+
+.mat-tab-body-wrapper{
+  // padding: 10px;
+  // box-shadow: 5px 0px 20px -10px #795548;
+  // border-radius: 10px;
+  background: #bdbdbd24;
+
+  width: 1100px;
+  padding: 10px;
+  top: 20px !important;
+  position: relative;
+  border-radius: 20px;
+  // height: 200px;
+
+}
+.mat-tab-label .mat-tab-label-content {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: .03em;
+}
