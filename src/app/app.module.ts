@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -20,16 +19,21 @@ import { PlanningComponent } from './planning/planning.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatTableModule } from '@angular/material/table';
+import { MessagesComponent } from './messages/messages.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { LiensutilesComponent } from './liensutiles/liensutiles.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    DashboardComponent,
+    MessagesComponent,
     SidenavComponent,
     NotificationsComponent,
     PlanningComponent,
+    LiensutilesComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +50,7 @@ import { MatTableModule } from '@angular/material/table';
     MatNativeDateModule,
     MatDatepickerModule,
     MatTableModule,
+    MatButtonToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent],

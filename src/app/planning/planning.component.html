@@ -3,11 +3,12 @@
     <h4>Planning</h4>
     <div class="d-flex align-items-center">
       <button
-        class="mx-3 button button-fill color-orange switchCalendarViewBtn"
+        class="mx-3 button button-fill color-orange switchCalendarViewBtn d-flex align-items-center justify-content-between"
         data-view="list"
         style="width: 115px; background: white"
       >
-        <strong style="color: #ff9800">Liste</strong>
+        <strong class="color">Liste</strong>
+        <mat-icon class="color">list</mat-icon>
       </button>
       <a class="link icon-only closePlanning" href="#" style="width: 70px">
         <span class="material-icons" style="color: #fff">close</span>
@@ -15,7 +16,23 @@
     </div>
   </div>
 
-  <div class="container bgc-content">
+
+
+  <div class="container bgc-content ">
+    <div class=" row mb-3">
+      <div class="buttons d-flex justify-content-between align-items-center">
+        <h4 class="text">20 – 26 févr. 2022
+        </h4>
+
+        <mat-button-toggle-group name="favoriteColor" aria-label="Favorite Color">
+          <mat-button-toggle class="drive_file" value="red"><span class="material-icons m-0 ">drive_file_rename_outline</span></mat-button-toggle>
+          <mat-button-toggle class="chevron" value="green"><span class="material-icons m-0">chevron_left</span></mat-button-toggle>
+          <mat-button-toggle class="chevron" value="blue"><span class="material-icons m-0">chevron_right</span></mat-button-toggle>
+        </mat-button-toggle-group>
+      </div>
+    </div>
+
+
     <table
       mat-table
       [dataSource]="dataSource"
@@ -23,26 +40,51 @@
     >
       <!-- Position Column -->
       <ng-container matColumnDef="position">
-        <th class="text-center" mat-header-cell *matHeaderCellDef>No.</th>
+        <th class="text-center" mat-header-cell *matHeaderCellDef>
+          <span>Dim. 20 </span>
+        </th>
         <td mat-cell *matCellDef="let element">{{ element.position }}</td>
       </ng-container>
-
       <!-- Name Column -->
       <ng-container matColumnDef="name">
-        <th class="text-center" mat-header-cell *matHeaderCellDef>Name</th>
+        <th class="text-center" mat-header-cell *matHeaderCellDef>
+          <span>Lun. 21 </span>
+        </th>
         <td mat-cell *matCellDef="let element">{{ element.name }}</td>
       </ng-container>
 
       <!-- Weight Column -->
       <ng-container matColumnDef="weight">
-        <th class="text-center" mat-header-cell *matHeaderCellDef>Weight</th>
+        <th class="text-center" mat-header-cell *matHeaderCellDef>
+          <span>Mar. 22 </span>
+        </th>
         <td mat-cell *matCellDef="let element">{{ element.weight }}</td>
       </ng-container>
 
       <!-- Symbol Column -->
       <ng-container matColumnDef="symbol">
-        <th class="text-center" mat-header-cell *matHeaderCellDef>Symbol</th>
+        <th class="text-center" mat-header-cell *matHeaderCellDef>
+          <span>Mer. 23 </span>
+        </th>
         <td mat-cell *matCellDef="let element">{{ element.symbol }}</td>
+      </ng-container>
+      <ng-container matColumnDef="address">
+        <th class="text-center" mat-header-cell *matHeaderCellDef>
+          <span>Jeu. 23 </span>
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.address }}</td>
+      </ng-container>
+      <ng-container matColumnDef="text2">
+        <th class="text-center" mat-header-cell *matHeaderCellDef>
+          <span>Ven. 25 </span>
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.text2 }}</td>
+      </ng-container>
+      <ng-container matColumnDef="text3">
+        <th class="text-center" mat-header-cell *matHeaderCellDef>
+          <span>Sam. 26 </span>
+        </th>
+        <td mat-cell *matCellDef="let element">{{ element.text3 }}</td>
       </ng-container>
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -54,11 +96,7 @@
       ></tr>
     </table>
 
-    <div>
-      <h3>Click Log</h3>
-    </div>
-
-    <div *ngIf="!clickedRows.size">Clicked rows will be logged here</div>
+    <div *ngIf="!clickedRows.size"></div>
 
     <ul>
       <li *ngFor="let clickedRow of clickedRows">
